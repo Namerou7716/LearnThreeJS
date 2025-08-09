@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /*最新のES機能を使用*/
+    "target": "es2017",                                 
+    /*クラスフィールドの定義方法を最新の使用に合わせる*/
+    "useDefineForClassFields": true,
+    /*モジュールシステム: ES Modules (import/export)*/
+    "module": "esnext",                                
+    /*ES2017機能とブラウザDOM API*/
+    "lib":["ES2017","DOM"],
+    /*JSONファイルのインポートを許可*/
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    /*CommonJS,ESmoduleを同時許可*/
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    /*厳密型チェック*/
+    "strict": true,                                      
+    /*デバック用のソースマップ*/
+    "sourceMap": true,
+    "skipLibCheck": true,
+    /*JavaScriptファイルを出力しない*/
+    "noEmit": true,                                
+    /*使用しないローカル変数をエラーとして検出*/
+    "noUnusedParameters": true,
+    /*関数のパス次第で戻り値が無い場合はエラーとして検出*/
+    "noImplicitReturns": true
+  },
+  /*TypeScriptでコンパイルする対象ディレクトリ*/
+  "include" : ["src/**/*"]
+}
